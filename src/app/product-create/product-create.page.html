@@ -1,0 +1,39 @@
+<!-- product-create.html -->
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-title>Create Product</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-item>
+    <ion-label>Name</ion-label>
+    <ion-input [(ngModel)]="data.name" placeholder="Enter Name"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Description</ion-label>
+    <ion-input [(ngModel)]="data.description" placeholder="Enter Description"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Price</ion-label>
+    <ion-input [(ngModel)]="data.price" placeholder="Enter price"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Photo</ion-label>
+    <ion-input [(ngModel)]="data.photo" placeholder="Enter photo URL"></ion-input>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-button (click)="submitForm()">Add
+    </ion-button>
+    <ion-button [routerLink]="[ '/dashboard']" color="danger" size="small">
+      Cancel
+    </ion-button>
+  </ion-item>
+
+</ion-content>
